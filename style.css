@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    /* ## Colors */
+    /* ### Primary */
+    --Orange: hsl(25, 97%, 53%);
+    /* ### Neutral */
+    --White-: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+.attribution {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    font-size: 11px;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Very-Dark-Blue);
+    font-family: "Overpass";
+    font-size: 15px;
+}
+
+.container {
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Dark-Blue);
+    border-radius: 25px;
+    padding: 2.5%;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    color: var(--Light-Grey);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.no {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    font-weight: 400;
+    color: white;
+    border-radius: 100%;
+    background-color: var(--Medium-Grey);
+    display: inline-block;
+    padding: 25px 25px;
+    margin: 10px 0px;
+}
+
+.btn:hover {
+    background-color: var(--Orange);
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: var(--Orange);
+    padding: 5%;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 7% 0;
+}
+
+.btn-submit:hover {
+    background-color: var(--White-);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.rating img {
+    width: 25px;
+    height: 25px;
+    background-color: var(--Medium-Grey);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.img img {
+    width: 15rem;
+    height: 9.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.reward {
+    font-size: 1.5rem;
+    color: var(--Orange);
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-align: center;
+    font-weight: 400;
+    background-color: var(--Medium-Grey);
+    width: 16rem;
+    margin: 3rem auto;
+}
+
+@media (max-width:700px) {
+    * {
+        font-size: 15px !important;
+    }
+    .container {
+        padding: 15px;
+    }
+    .btn {
+        padding: 15px;
+        margin-right: 10px;
+    }
+}
+
+.orange {
+    background-color: var(--Orange);
+}
